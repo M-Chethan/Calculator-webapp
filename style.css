@@ -1,50 +1,208 @@
-.calculator{
-    max-width: 400px;
+/*.calculator{
+    
+    width: 100%;
+    height: 100%;
     margin: 10% auto 0 auto;
-    box-shadow: 0px 0px 43px 17px rgba(153, 153, 153, 1) ;
+    box-shadow: 17px 0px 43px 17px rgba(153, 153, 153, 1) ;
 
+}
+body{
+    font-family: monospace;
+    display: flex;
+    text-align: center;
 }
 
 #display {
+    color: whitesmoke;
+    background-color: black;
     text-align: right;
     height: 70px;
     line-height: 70px;
     padding: 16px 8px;
     font-size: 25px;
+    width: 100%;
 }
 
-.buttons{
+.operator{
+    color: #4c3beb;
+     display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.num{
     display: grid;
     border-bottom: 1px solid #999;
     border-left: 1px solid #999;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    float: left;
 }
-.buttons > div {
-    border-top: 1px solid #999;
-    border-right: 1px solid #999;
-    /* border: solid 2px red; */
+.num > div {
+    border: 1px solid #999;
+
 }
 
+
+
 .button{
-    border: 0.5px solid #999;
+    border: solid rgb(173, 157, 157);
     line-height: 100px;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
+    margin: 4px;
+    
+    
 
 }
-
-#equle {
-
-    background-color: #4c3beb;
+#clear{
+    background-color: red;
     color: wheat;
-    lent
 
 }
 
-.button:hover {
-    background-color: #323330;
+.equle {
+    
+    float: right, initial ;
+
+    background-color: blue;
+    color: wheat;
+    width: 19%;
+    float: right;
+    grid-column: initial;
+    
+}
+
+ 
+.button:hover{
+    background-color: rgb(122, 119, 119);
     color: wheat;
     transition: 0.5s ease-in-out
+
+}*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: monospace;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.calculator{
+    width: 450px;
+    height: 635px;
+    margin: 10% auto 0 auto;
+    box-shadow: 17px 0px 43px 17px rgba(153, 153, 153, 1) ;
+
+}
+#display {
+    color: whitesmoke;
+    background-color: black;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    width: 100%;
+}
+
+   
+.operator{
+    color: #4c3beb;
+     display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+
+    border: solid rgb(173, 157, 157);
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+#symble{
+    padding: 0px;
+    margin: 4px;
+
+}
+
+.num{
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75%;
+    float: left;
+
+    border: solid rgb(173, 157, 157);
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+
+}
+#number{
+    padding: 0px;
+    margin: 4px;
+
+}
+ 
+.num > div {
+    border: 1px solid #999;
+
+}
+.button{
+    border: solid rgb(173, 157, 157);
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+   
+}
+.button:hover{
+    background-color: rgb(122, 119, 119);
+    color: wheat;
+   
+    transition: 0.5s ease-in-out
+}
+#clear{
+    background-color: red;
+    color: wheat;
+
+}
+.equle {
+    
+    float: right;
+
+    background-color: blue;
+    color: wheat;
+    width: 24%;
+    float: right;
+    grid-column: initial;
+    
+}
+.eqlButton{
+    border: solid rgb(173, 157, 157);
+    line-height: 445px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    height: 446px;
+
 
 }
