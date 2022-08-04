@@ -99,15 +99,14 @@ body{
     
 }
 .calculator{
-    width: 450px;
-    height: 635px;
+    width: 500px;
     margin: 10% auto 0 auto;
     box-shadow: 17px 0px 43px 17px rgba(153, 153, 153, 1) ;
 
 }
 #display {
     color: whitesmoke;
-    background-color: black;
+    background-color: #252525;
     text-align: right;
     height: 70px;
     line-height: 70px;
@@ -119,14 +118,10 @@ body{
    
 .operator{
     color: #4c3beb;
-     display: grid;
-    
+    display: grid;
+    padding: 8px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
-    border-bottom: 1px solid #999;
-    border-left: 1px solid #999;
-
-    border: solid rgb(173, 157, 157);
     line-height: 100px;
     text-align: center;
     font-size: 25px;
@@ -136,23 +131,19 @@ body{
 #symble{
     padding: 0px;
     margin: 4px;
-
+    color: #2e86c0
 }
 
 .num{
     display: grid;
-    border-bottom: 1px solid #999;
-    border-left: 1px solid #999;
     grid-template-columns: 1fr 1fr 1fr;
     width: 75%;
     float: left;
-
-    border: solid rgb(173, 157, 157);
     line-height: 100px;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
-    padding: 0px;
+    padding: 8px;
     margin: 0px;
 
 }
@@ -172,7 +163,8 @@ body{
     text-align: center;
     font-size: 25px;
     cursor: pointer;
-   
+   border-radius: 4px;
+   border-width: 1px;
 }
 .button:hover{
     background-color: rgb(122, 119, 119);
@@ -181,28 +173,28 @@ body{
     transition: 0.5s ease-in-out
 }
 #clear{
-    background-color: red;
+    background-color: #ed575d;
     color: wheat;
+    padding: 0px;
+    margin: 4px;
 
 }
 .equle {
-    
-    float: right;
-
-    background-color: blue;
+    border-radius: 4px;
+    float: left;
+    margin-top: 12px;
+    background-color: #2e86c0;
     color: wheat;
-    width: 24%;
-    float: right;
+    width: 22%;
     grid-column: initial;
     
 }
 .eqlButton{
-    border: solid rgb(173, 157, 157);
     line-height: 445px;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
-    height: 446px;
+    height: 430px;
 
 
 }
